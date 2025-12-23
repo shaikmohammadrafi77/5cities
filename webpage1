@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Webpage</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+      
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+      
+        .nav {
+            background-color: #2c3e50;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        .content {
+            background-color: #f8f9fa;
+            padding: 40px;
+            text-align: center;
+        }
+
+    
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Welcome to My Simple Webpage</h1>
+    </div>
+
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="content">
+        <h2>About This Page</h2>
+        <p>
+            This is a simple webpage created using HTML and a bit of CSS styling.
+        </p>
+        <p>
+            You can add more sections, images, and links to make it more interactive.
+        </p>
+        <a href="#">Visit Example Website</a>
+    </div>
+
+    <div class="footer">
+        © 2025 My Webpage | Designed by Devaka
+    </div>
+
+</body>
+</html>
