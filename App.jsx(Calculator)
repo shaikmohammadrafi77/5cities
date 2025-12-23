@@ -1,0 +1,68 @@
+import { useState } from "react";
+import "./Calculator.css"
+function App() {
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(0);
+  const [r, setR] = useState(0);
+
+  return (
+    <div>
+      <h3>Simple Calculator</h3>
+
+      <input type="number" onChange={e => setA(+e.target.value)} />
+      <input type="number" onChange={e => setB(+e.target.value)} />
+
+      <br /><br />
+
+      <button onClick={() => setR(a + b)}>+</button>
+      <button onClick={() => setR(a - b)}>-</button>
+      <button onClick={() => setR(a * b)}>*</button>
+      <button onClick={() => setR(a / b)}>/</button>
+
+      <h3>Result: {r}</h3>
+    </div>
+  );
+}
+
+export default App;
+
+---------------------------------- Calculator.css --------------------------------------------------------------------------
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;   /* center left-right */
+  align-items: center;       /* center top-bottom */
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  width: 320px;
+  padding: 30px;
+  text-align: center;
+  border: 7px solid rgb(92, 9, 225);
+  border-radius: 70px;
+  background: rgb(26, 176, 141);
+}
+
+h3 {
+  color: rgb(0, 19, 128);
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #670707;
+}
+
+.button {
+  background: #0d6efd;
+  color: rgb(142, 37, 37);
+  border: black;
+  padding: 10px 14px;
+  margin: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
